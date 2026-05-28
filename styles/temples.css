@@ -1,8 +1,9 @@
 :root {
-    --primary-color: blue;
+    --primary-color: #2563eb;
     --secondary-color: white;
     --font-family: 'Oswald', sans-serif;
     --background-color: #f0f0f0;
+    --text-dark: #1f2937;
 }
 
 body {
@@ -11,20 +12,99 @@ body {
     margin: 0;
     padding: 0;
 }
-header, footer {
-    background-color: blue;
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-nav a {
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.nav-menu a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
 }
-nav a:hover {
-    text-decoration: underline;
+
+.nav-menu a:hover {
+    background-color: #1e40af;
+    border-bottom-color: white;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 .temple-album {
     padding: 20px;
@@ -52,4 +132,46 @@ nav a:hover {
     margin-top: 10px;
     font-weight: bold;
     color: #333;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #1e40af;
+    }
+
+    .nav-menu.active {
+        max-height: 300px;
+    }
+
+    .nav-menu a {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-menu a:hover {
+        background-color: #1e40af;
+    }
 }
