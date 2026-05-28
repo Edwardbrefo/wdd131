@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js"></script>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,47 +30,49 @@
         </nav>
     </header>
     <main>
-        <h1></h1>
-        <figure>
-        <img src="images/monticello-utah.jpg" alt="monticello temple">
-        <figcaption>Monticello Temple</figcaption>
-        </figure>
-        <figure>
-        <img src="images/nauvoo-illinois.jpg" alt="Nauvoo Temple">
-        <figcaption>Nauvoo Temple</figcaption>
-        </figure>
-        <figure>
-        <img src="images/atlanta-georgia.jpg" alt="Atlanta Temple">
-        <figcaption>Atlanta Temple</figcaption>
-        </figure>
-         <figure>
-        <img src="images/aba-nigeria.jpg" alt="Nigeria Temple">
-        <figcaption>Nigeria Temple</figcaption>
-        </figure>
-         <figure>
-        <img src="images/accra-ghana.jpg" alt="Accra Temple">
-        <figcaption>Accra Temple</figcaption>
-        </figure>
-         <figure>
-        <img src="images/auckland-new-zealand.jpg" alt="Auckland Temple">
-        <figcaption>Auckland Temple</figcaption>
-        </figure>
-         <figure>
-        <img src="images/birmingham-england.jpg" alt="Birmingham Temple">
-        <figcaption>Birmingham Temple</figcaption>
-        </figure>
-         <figure>
-        <img src="images/paris-france.jpg" alt="Paris Temple">
-        <figcaption>Paris Temple</figcaption>
-        </figure>
-         <figure>
-        <img src="images/dallas-texas.jpg" alt="Dallas Temple">
-        <figcaption>Dallas Temple</figcaption>
-        </figure>
+        <h1>Temple Album</h1>
+        <div class="temple-gallery">
+            <figure>
+                <img src="images/monticello-utah.jpg" alt="monticello temple">
+                <figcaption>Monticello Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nauvoo-illinois.jpg" alt="Nauvoo Temple">
+                <figcaption>Nauvoo Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/atlanta-georgia.jpg" alt="Atlanta Temple">
+                <figcaption>Atlanta Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aba-nigeria.jpg" alt="Nigeria Temple">
+                <figcaption>Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana.jpg" alt="Accra Temple">
+                <figcaption>Accra Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/auckland-new-zealand.jpg" alt="Auckland Temple">
+                <figcaption>Auckland Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/birmingham-england.jpg" alt="Birmingham Temple">
+                <figcaption>Birmingham Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris-france.jpg" alt="Paris Temple">
+                <figcaption>Paris Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/dallas-texas.jpg" alt="Dallas Temple">
+                <figcaption>Dallas Temple</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
-     <p>©️2025 🥥 Edward Brefo 🥥 Ghana </p>
-     <p><span id="currentyear"></span><span id="currentTime"></span></p>
+        <p>&copy; <span id="currentyear"></span> Edward Brefo | Greater Accra, Ghana</p>
+        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
