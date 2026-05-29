@@ -1,0 +1,29 @@
+WEBSITE PROJECT PROPOSAL
+========================
+
+SUBJECT
+Club Pulse Ghana
+
+CONTENT
+A website for Ghanaian football fans to find club information, upcoming matches, photos, and connect with other fans.
+
+Key Pages:
+- Home page with upcoming matches
+- Club profiles and team information
+- Match calendar and events
+- Photo gallery of stadiums and clubs
+- Fan signup and community section
+
+Colors: Gold, Red, Green, Black
+Fonts: Oswald (headings), Inter (body text)
+
+REASON
+I chose Club Pulse Ghana because:
+
+1. It's about something I care about - Ghanaian football culture
+2. It serves a real community need
+3. It lets me practice different web skills (forms, galleries, calendars, JavaScript)
+4. It's relevant to Ghana and shows local pride
+5. It will be a strong portfolio project
+
+This project combines my passion for football with web development skills.
