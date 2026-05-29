@@ -76,7 +76,19 @@ header h1 {
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
-}flex;
+}
+
+.nav-menu a:last-child {
+    border-bottom: none;
+}
+
+.nav-menu a:hover {
+    background-color: var(--primary-dark);
+    padding-left: 1.5rem;
+}
+
+.hamburger {
+    display: flex;
     flex-direction: column;
     background: none;
     border: none;
@@ -95,19 +107,7 @@ header h1 {
 }
 
 .hamburger:hover span {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6
-
-.hamburger span {
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.hamburger:hover span {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .hamburger.active span:nth-child(1) {
@@ -157,6 +157,35 @@ figure:hover {
 
 figure img {
     width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-top: 4rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
     header {
         position: relative;
     }
@@ -188,35 +217,6 @@ figure img {
 
     figcaption {
         padding: 1rem;
-        font-size: 1.1rem
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        background-color: #1e40af;
-    }
-
-    .nav-menu.active {
-        max-height: 300px;
-    }
-
-    .nav-menu a {
-        padding: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        text-align: center;
-        margin: 0;
-    }
-
-    .nav-menu a:last-child {
-        border-bottom: none;
-    }
-
-    .nav-menu a:hover {
-        background-color: #1e40af;
+        font-size: 1.1rem;
     }
 }
