@@ -69,6 +69,22 @@ main.siteplan section {
     border: 1px solid rgba(0, 0, 0, 0.06)
 }
 
+.swatch-sample.gold {
+    background: var(--brand-gold);
+}
+
+.swatch-sample.red {
+    background: var(--brand-red);
+}
+
+.swatch-sample.green {
+    background: var(--brand-green);
+}
+
+.swatch-sample.black {
+    background: black;
+}
+
 .swatch-label {
     font-size: 0.95rem
 }
