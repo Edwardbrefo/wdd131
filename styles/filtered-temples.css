@@ -22,6 +22,11 @@ header, footer {
     padding: 10px 0;
     text-align: center;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 nav a {
     color: white;
     margin: 0 15px;
@@ -57,4 +62,30 @@ nav a:hover {
     margin-top: 10px;
     font-weight: bold;
     color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .temple-photos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 8px 0;
+    }
+    .temple-photos {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }

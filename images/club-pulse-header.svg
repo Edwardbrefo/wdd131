@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <!-- Logo circle -->
+  <circle cx="40" cy="50" r="35" fill="#C9B037"/>
+  <!-- CP text in circle -->
+  <text x="40" y="62" font-family="Oswald, sans-serif" font-size="32" font-weight="bold" fill="#000000" text-anchor="middle">CP</text>
+  <!-- Club Pulse text -->
+  <text x="95" y="55" font-family="Oswald, sans-serif" font-size="28" font-weight="600" fill="#C9B037" letter-spacing="1">CLUB PULSE</text>
+</svg>

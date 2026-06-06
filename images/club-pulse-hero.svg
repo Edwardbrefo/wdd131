@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <!-- Simple background -->
+  <rect width="600" height="300" fill="#000000"/>
+  
+  <!-- Large logo circle -->
+  <circle cx="150" cy="150" r="100" fill="#C9B037"/>
+  <!-- CP initials -->
+  <text x="150" y="175" font-family="Oswald, sans-serif" font-size="80" font-weight="bold" fill="#000000" text-anchor="middle">CP</text>
+  
+  <!-- Text section -->
+  <text x="310" y="130" font-family="Oswald, sans-serif" font-size="52" font-weight="600" fill="#C9B037" letter-spacing="2">CLUB</text>
+  <text x="310" y="185" font-family="Oswald, sans-serif" font-size="52" font-weight="600" fill="#CC0000" letter-spacing="2">PULSE</text>
+</svg>
