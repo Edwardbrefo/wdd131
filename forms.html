@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Product Review form to collect customer feedback on electronics including rating, installation date, and detailed reviews.">
+    <meta name="author" content="Edward Brefo">
+    <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/forms.css">
-    <script src="scripts/forms.js " defer></script>
+    <script src="scripts/forms.js" defer></script>
 </head>
 <body>
     <header><h1>
@@ -44,9 +46,10 @@
         <label for="5star">⭐⭐⭐⭐⭐</label>
         </fieldset>
 
-
-       <legend>Date Of Installation</legend>
+        <fieldset>
+        <legend>Date Of Installation</legend>
         <input type="date" id="dateInstall" name="dateInstall" required>
+        </fieldset>
         
         <fieldset>
         <legend>Useful Features</legend>
@@ -69,7 +72,7 @@
     
         <fieldset>
         <legend>Written Review</legend>
-        <textarea id="writtenReview" name="writtenReview" rows="4" cols="50" ></textarea required>
+        <textarea id="writtenReview" name="writtenReview" rows="4" cols="50" required></textarea>
         </fieldset>
         
         <fieldset>
