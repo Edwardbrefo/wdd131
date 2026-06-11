@@ -14,40 +14,30 @@
         Product Review
     </h1></header>
     <main>
-      <form method="get" action="review.html">
+      <form id="reviewForm">
         <fieldset>
-        <legend>Product Name</legend>
-        <select name="productSelect" id="productSelect" required>
+        <legend>Product Name <span class="required">*</span></legend>
+        <select name="product" id="productSelect" required>
             <option value="" disabled selected>--Please choose an option--</option>
-            <option value="laptop">Laptop</option>
-            <option value="smartphone">Smartphone</option>
-            <option value="tablet">Tablet</option>
-            <option value="smartwatch">Smartwatch</option>
-            <option value="headphones">Headphones</option>
-            <option value="camera">Camera</option>
-            <option value="printer">Printer</option>
-            <option value="monitor">Monitor</option>
-            <option value="router">Router</option>
-            <option value="external hard drive">External Hard Drive</option>
         </select>
         </fieldset>
 
         <fieldset>
-        <legend>Overall Rating</legend>
-        <input type="radio" id="1star" name="overallRating" required>
+        <legend>Overall Rating <span class="required">*</span></legend>
+        <input type="radio" id="1star" name="rating" value="1" required>
         <label for="1star">⭐</label>
-        <input type="radio" id="2star" name="overallRating">
+        <input type="radio" id="2star" name="rating" value="2">
         <label for="2star">⭐⭐</label>
-        <input type="radio" id="3star" name="overallRating">
+        <input type="radio" id="3star" name="rating" value="3">
         <label for="3star">⭐⭐⭐</label>
-        <input type="radio" id="4star" name="overallRating">
+        <input type="radio" id="4star" name="rating" value="4">
         <label for="4star">⭐⭐⭐⭐</label>
-        <input type="radio" id="5star" name="overallRating">
+        <input type="radio" id="5star" name="rating" value="5">
         <label for="5star">⭐⭐⭐⭐⭐</label>
         </fieldset>
 
         <fieldset>
-        <legend>Date Of Installation</legend>
+        <legend>Date Of Installation <span class="required">*</span></legend>
         <input type="date" id="dateInstall" name="dateInstall" required>
         </fieldset>
         
@@ -71,18 +61,19 @@
         </fieldset>
     
         <fieldset>
-        <legend>Written Review</legend>
-        <textarea id="writtenReview" name="writtenReview" rows="4" cols="50" required></textarea>
+        <legend>Written Review <span class="required">*</span></legend>
+        <textarea id="reviewText" name="reviewText" rows="4" cols="50" required></textarea>
         </fieldset>
         
         <fieldset>
         <legend>Full Name</legend>
-        <input type="text" id="fullName" name="fullName" required>
+        <input type="text" id="fullName" name="fullName">
         </fieldset>
 
         <button type="submit">Post Review</button>
 
-    </form>
+      </form>
+      <p id="reviewCount" style="text-align: center; margin-top: 1rem; font-weight: bold;"></p>
     </main>
     <footer>
     <p>©️ <span id="currentyear"></span> Edward Brefo | Greater Accra,Ghana</p>
