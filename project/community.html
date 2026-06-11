@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Club Pulse Ghana fan community. Sign up to receive match updates and connect with fellow football enthusiasts.">
+    <title>Community - Club Pulse Ghana</title>
+    <link rel="icon" href="../images/club-pulse-favicon2.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="../images/club-pulse-header.svg" alt="Club Pulse Ghana logo">
+                <div>
+                    <h1>Club Pulse Ghana</h1>
+                    <p class="tagline">Ghana — For the love of the game</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clubs.html">Clubs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="community.html" class="active">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Join Our Fan Community</h1>
+            <p>Connect with passionate football fans and stay updated on all Ghana football news</p>
+        </section>
+
+        <section>
+            <h2>Sign Up for Updates</h2>
+            <form id="fanForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="club">Favorite Club:</label>
+                    <select id="club" name="club" required>
+                        <option value="">-- Select Your Favorite Club --</option>
+                        <option value="Hearts of Oak">Hearts of Oak</option>
+                        <option value="Asante Kotoko">Asante Kotoko</option>
+                        <option value="Aduana Stars">Aduana Stars</option>
+                        <option value="Accra Lions">Accra Lions</option>
+                        <option value="Dreams FC">Dreams FC</option>
+                        <option value="Bechem United">Bechem United</option>
+                        <option value="Techiman Eleven Wonders">Techiman Eleven Wonders</option>
+                        <option value="Samartex">Samartex</option>
+                        <option value="Tamale City">Tamale City FC</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="newsletter" checked>
+                        Subscribe to match updates and news
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+            <div id="formMessage"></div>
+        </section>
+
+        <section>
+            <h2>Recent Signups</h2>
+            <div id="signupsList" class="signups-list">
+                <p>Be the first to join our fan community!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="community.html">Community</a>
+                <a href="references.html">References</a>
+            </div>
+            <p class="copyright">&copy; 2026 Club Pulse Ghana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
