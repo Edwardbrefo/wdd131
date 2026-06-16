@@ -1,4 +1,6 @@
 /* Club Pulse Ghana - Main Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap');
+
 :root {
     --brand-gold: #C9B037;
     --brand-red: #CC0000;
@@ -10,8 +12,6 @@
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap');
 
 * {
     margin: 0;
