@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - My Web Development Projects and Coursework">
+    <title>Portfolio - My Work</title>
+    <link rel="icon" href="../images/club-pulse-favicon2.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .portfolio-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-card-header {
+            background: linear-gradient(135deg, var(--brand-gold) 0%, var(--brand-red) 100%);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .portfolio-card-header h3 {
+            margin: 0 0 0.5rem 0;
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .portfolio-card-description {
+            padding: 1.5rem;
+        }
+
+        .portfolio-card-description p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .portfolio-card-link {
+            display: inline-block;
+            background: var(--brand-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .portfolio-card-link:hover {
+            background: var(--brand-red);
+            text-decoration: none;
+        }
+
+        .category-label {
+            display: inline-block;
+            background: var(--bg-soft);
+            color: var(--brand-green);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="../images/club-pulse-header.svg" alt="Club Pulse Ghana logo">
+                <div>
+                    <h1>My Portfolio</h1>
+                    <p class="tagline">Web Development Projects & Coursework</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clubs.html">Clubs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>My Web Development Work</h1>
+            <p>A collection of my projects and assignments from WDD 131 Web Fundamentals course</p>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="portfolio-grid">
+                <!-- Main Project -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Club Pulse Ghana</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>A comprehensive fan community website for Ghanaian football. Features match schedules, club profiles, and a signup form with localStorage functionality.</p>
+                        <span class="category-label">Main Project</span>
+                        <br><br>
+                        <a href="index.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Temple Project -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Temple Project</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>A responsive website showcasing beautiful temples with image galleries, information pages, and interactive navigation.</p>
+                        <span class="category-label">HTML/CSS</span>
+                        <br><br>
+                        <a href="../temple.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Media Query Project -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Media Query Practice</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>Responsive design demonstration using CSS media queries. Shows mobile, tablet, and desktop layouts.</p>
+                        <span class="category-label">Responsive Design</span>
+                        <br><br>
+                        <a href="../media-query.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Filtered Temples -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Filtered Temples</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>Interactive temple filtering application with dynamic content display and user interaction features.</p>
+                        <span class="category-label">JavaScript</span>
+                        <br><br>
+                        <a href="../filtered-temples.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Forms -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Forms & Validation</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>Form design and validation practice with proper HTML structure and user-friendly error handling.</p>
+                        <span class="category-label">HTML Forms</span>
+                        <br><br>
+                        <a href="../forms.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Place Project -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Place Information</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>A page featuring location information with maps, descriptions, and responsive image layouts.</p>
+                        <span class="category-label">HTML/CSS</span>
+                        <br><br>
+                        <a href="../place.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Sea Project -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Sea Life Project</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>An informational website about ocean life with images, facts, and educational content.</p>
+                        <span class="category-label">Web Design</span>
+                        <br><br>
+                        <a href="../sea.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- BOM Week 02 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Book of Mormon (Week 2)</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>Book of Mormon chapter navigator built with vanilla JavaScript and DOM manipulation techniques.</p>
+                        <span class="category-label">JavaScript DOM</span>
+                        <br><br>
+                        <a href="../week02/bom.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Design Week 03 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Design Exercise (Week 3)</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>Web design and layout exercise demonstrating CSS styling and design principles.</p>
+                        <span class="category-label">CSS Design</span>
+                        <br><br>
+                        <a href="../week03/design.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- BOM Filter Week 05 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <h3>Book of Mormon Filter (Week 5)</h3>
+                    </div>
+                    <div class="portfolio-card-description">
+                        <p>Advanced Book of Mormon navigator with filtering functionality and chapter selection features.</p>
+                        <span class="category-label">JavaScript Advanced</span>
+                        <br><br>
+                        <a href="../week05/bomfilter.html" class="portfolio-card-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="community.html">Community</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="references.html">References</a>
+            </div>
+            <p class="copyright">&copy; 2026 Club Pulse Ghana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
